@@ -124,7 +124,7 @@ Navbar.defaultProps = {
   brandName: (
     <>
       <img
-        src="../../../../public/img/logolarge.png"
+        src="../../../../public/img/logo-large.png"
         alt="Brand Logo"
         className="hidden md:block h-20 w-auto"
       />
