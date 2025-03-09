@@ -147,8 +147,6 @@ Navbar.defaultProps = {
   ),
 };
 
-
-
 Navbar.propTypes = {
   brandName: PropTypes.string,
   routes: PropTypes.arrayOf(PropTypes.object).isRequired,
