@@ -121,7 +121,20 @@ export function Navbar({ brandName, routes, action }) {
 }
 
 Navbar.defaultProps = {
-  brandName: "Material Tailwind React",
+  brandName: (
+    <>
+      <img
+        src="../../../../public/img/logo-large.png"
+        alt="Brand Logo"
+        className="hidden md:block h-20 w-auto"
+      />
+      <img
+        src="../../../../public/img/logo.png"
+        alt="Brand Logo"
+        className="block md:hidden h-10 w-auto"
+      />
+    </>
+  ),
   action: (
     <a
       href="https://www.creative-tim.com/product/material-tailwind-kit-react"
@@ -133,6 +146,8 @@ Navbar.defaultProps = {
     </a>
   ),
 };
+
+
 
 Navbar.propTypes = {
   brandName: PropTypes.string,
